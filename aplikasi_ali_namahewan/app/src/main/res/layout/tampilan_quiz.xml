@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background= "@drawable/bgmenu">
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@android:style/Widget.Holo.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:background="#FF9800"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text=" Quiz"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F60E0E"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="57dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="?android:attr/homeAsUpIndicator"
+            android:contentDescription="Kembali"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="791dp"
+            android:layout_height="1183dp"
+            android:layout_marginTop="8dp"
+            android:background="#88000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+
+            <TextView
+                android:id="@+id/tvSoal"
+                android:layout_width="587dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="end"
+                android:layoutDirection="rtl"
+                android:lineSpacingExtra="8dp"
+                android:text="١. عليّ فتى وسيم ومهذب. يحضر إلى المدرسة يوميًا في الموعد المحدد، ويأخذ دروسه على محمل الجد."
+                android:textColor="#FFFFFF"
+                android:textDirection="rtl"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="666dp"
+                android:layout_height="217dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSoal">
+
+                <RadioButton
+                    android:id="@+id/rbOpsi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="A. opsi 1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/rbOpsi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="B. Opsi 2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/rbOpsi3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="C. Opsi 3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+
+                <RadioButton
+                    android:id="@+id/rbOpsi4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="D. Opsi 4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="200dp"
+                android:layout_height="69dp"
+                android:layout_marginBottom="388dp"
+                android:background="@color/white"
+                android:text="Next"
+                android:textSize="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.228"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
